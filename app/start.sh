@@ -9,6 +9,7 @@ if [ -f /etc/nginx/nginx.conf ] ; then
 	echo "nginx config exists."
 else 
 	cp /app/default /etc/nginx/nginx.conf
+	chmod a+rw /etc/nginx/nginx.conf
 fi
 
 echo "${NOW} - *** Starting the nginx process"
