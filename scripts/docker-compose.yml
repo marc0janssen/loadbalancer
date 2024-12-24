@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  nzbgetloadbalancer:
+    image: marc0janssen/nzbgetloadbalancer
+    container_name: nzbgetloadbalancer
+    volumes:
+      - /home/admin/docker/nzbgetloadbalancer/config/etc/nginx:/etc/nginx
+    ports:
+      - 80:80
+    restart: unless-stopped
+    network_mode: bridge
+    
