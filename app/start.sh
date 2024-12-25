@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Name: nzbgetloadbalancer
+# Name: loadbalancer
 # Coder: Marco Janssen (twitter @marc0janssen)
 # date: 2024-12-24 23:31:00
-# update: 2024-12-24 23:31:00
+# update: 2024-12-25 23:21:00
 
 if [ -f /etc/nginx/nginx.conf ] ; then
 	echo "nginx config exists."
