@@ -6,7 +6,7 @@ services:
     volumes:
       - /home/admin/docker/loadbalancer/config/etc/nginx:/etc/nginx
     ports:
-      - 80:80
+      - 8081:8081
     restart: unless-stopped
     network_mode: bridge
     

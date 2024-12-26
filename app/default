@@ -14,7 +14,7 @@ http {
     }
 
     server {
-        listen 80;                      # Change to 443 for HTTPS
+        listen 8081;                      # Change to 443 for HTTPS
         server_name your.domain.com;    # Replace with your domain
 
         location / {

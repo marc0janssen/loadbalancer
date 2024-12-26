@@ -7,7 +7,7 @@ ADD /app/ /app/
 RUN apt-get -y update && apt-get -y install nginx && chmod +x /app/*.sh
 
 # expose port for http
-EXPOSE 80/tcp
+EXPOSE 8081/tcp
 
 # map /etc/nginx to host defined config path (used to store configuration from app)
 VOLUME /etc/nginx
