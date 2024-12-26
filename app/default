@@ -6,7 +6,7 @@ events {
 }
 
 http {
-    upstream nzbget_servers {
+    upstream balanced_servers {
         server 192.168.1.1:6789;        # Replace with your first server IP and port
         server 192.168.1.2:6789;        # Replace with your second server IP and port
         ip_hash; 
@@ -18,7 +18,7 @@ http {
         server_name your.domain.com;    # Replace with your domain
 
         location / {
-            proxy_pass http://nzbget_servers;
+            proxy_pass http://balanced_serversxss;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "upgrade";
